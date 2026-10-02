@@ -1,73 +1,46 @@
-# React + TypeScript + Vite
+# 📖 React Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma Landing Page moderna, responsiva e de alta performance. Desenvolvida para apresentar conteúdo de forma direta e atraente, focando em conversão e usabilidade (UI/UX).
 
-Currently, two official plugins are available:
+![Status do Projeto](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success)  ![Tecnologias](https://img.shields.io/badge/React_|_TypeScript-00BFFF?logo=react&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Preview da Landing Page](./src/assets/preview.png) 
 
-## React Compiler
+## 🎯 Objetivo do Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Construir uma interface front-end robusta e tipada, aplicando conceitos de componentização e design responsivo. O projeto serve como demonstração prática de estruturação de aplicações web modernas utilizando o ecossistema do React.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Este projeto foi desenvolvido com as seguintes ferramentas:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React** - Biblioteca principal para construção da interface.
+- **TypeScript** - Adicionando tipagem estática para um código mais seguro e previsível.
+- **Vite** - Ferramenta de build e servidor de desenvolvimento ultrarrápido.
+- **CSS3** - * Para estilização*.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Destaques e Funcionalidades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Design Responsivo:** Layout 100% adaptável para Desktop, Tablet e Mobile.
+- **Componentização Avançada:** Arquitetura limpa com componentes reutilizáveis.
+- **Tipagem Segura:** Prevenção de erros em tempo de desenvolvimento graças ao TypeScript.
+- **Alta Performance:** Otimização de entrega e carregamento rápido garantido pelo Vite.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚙️ Como executar o projeto localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Pré-requisitos: É necessário ter o **Node.js** e o **Git** instalados na sua máquina.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Clone o repositório
+git clone [https://github.com/Cgustav209/REACT-LANDING-PAGE.git](https://github.com/Cgustav209/REACT-LANDING-PAGE.git)
+
+# Acesse a pasta do projeto
+cd REACT-LANDING-PAGE
+
+# Instale as dependências
+npm install
+
+# Execute a aplicação em modo de desenvolvimento
+npm run dev
+
 ```

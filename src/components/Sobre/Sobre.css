@@ -1,0 +1,70 @@
+.sobre {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-sobre {
+  gap: 64px;
+  padding: 96px 32px;
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coluna1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+
+.coluna1 h2 {
+  font-size: 3rem;
+  color: var(--black-color);
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+.tagSobre {
+   font-size: 0.875rem;
+   text-transform: uppercase;
+   color: var(--primary-color);
+   font-weight: 600;
+   letter-spacing: 2.4px;
+}
+
+.coluna2 {
+  padding: 40px;
+  background-color: var(--white-color);  
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 32px;
+}
+
+.coluna2 h3 {
+  font-size: 1.5rem; /*24px : 16 = 1.5rem*/
+  color: var(--black-color);
+  font-weight: bold;
+}
+
+.item-pilar {
+  display: flex;
+  gap: 16px;
+  
+}
+.titulo-pilar {
+  font-size: 1rem;
+  color: var(--black-color);
+  font-weight: bold;
+}
+
+.descricao-pilar {
+  font-size: 0.875rem;
+  
+}

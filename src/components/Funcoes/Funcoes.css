@@ -1,0 +1,59 @@
+.funcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EFF4FF; 
+    }
+
+.container-funcoes {
+  gap: 64px;
+  padding: 96px 32px;
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Titulos{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+.tagFuncoes {
+   font-size: 2.25rem;
+   color: var(--black-color);
+   font-weight: 700;
+}
+.Titulos p{
+    width: 80%;
+    text-align: center;
+}
+
+.lista-funcoes {
+  display: grid;
+ /* Cria colunas responsivas: o grid tenta encaixar o máximo de colunas possível (auto-fit),
+   cada uma com no mínimo 300px e podendo crescer até ocupar o espaço disponível (1fr) */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 1fr serve para preencher o espaço disponível */
+  width: 100%;
+  gap: 32px;
+  justify-content: center;
+}
+
+.funcao-item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  padding: 16px;
+  border-radius: 8px;
+  gap: 16px;
+}
+.funcao-item h3 {
+  font-size: 1rem;
+  color: var(--black-color);
+  font-weight: bold;
+}
+.icon-funcao {
+   font-size: 2rem;
+}
